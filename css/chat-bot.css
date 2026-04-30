@@ -1,0 +1,105 @@
+.chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #4e9fcf;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .chatbot-btn:hover {
+    background-color: #4e9fcf;
+    transform: scale(1.05);
+  }
+  
+  .chatbot-btn i {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .chatbox {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .chatbox-header {
+    background-color: #4e9fcf;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .chatbox-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .chatbox-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chatbox-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .chatbox-input button {
+    background-color: #4e9fcf;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+
+  body:has(.switch input:checked) .chatbox-body,
+body:has(.switch input:checked).chatbot-btn:hover {
+  background-color: #0a2647;
+}
+
+body:has(.switch input:checked) .chatbox-input button,
+body:has(.switch input:checked) .chatbox-input input,
+body:has(.switch input:checked) .chatbox-header,
+body:has(.switch input:checked) .chatbot-btn {
+  background-color: #16375c;
+}
+
+body:has(.switch input:checked) .chatbox-body,
+body:has(.switch input:checked) .chatbox-input ::-webkit-input-placeholder {
+  color: #e0eaf0;
+}

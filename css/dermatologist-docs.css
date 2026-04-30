@@ -1,0 +1,549 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    background-image: url('/images/dermatologists-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+  
+}
+
+.header {
+    z-index: 999;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.blue-background {
+    background-color: #226597;
+    width: 90%;
+    min-height: 100vh;
+    margin: 50px 0;
+    box-shadow: 0 3px 20px rgba(1 1 1 / 75%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 70px;
+}
+
+.doc-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 300px;
+    color: #F3F9FB;
+}
+
+.doc-text {
+    color: #F3F9FB;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.doc-text span {
+    color: #F3F9FB;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.doc-text .title h2 {
+    font-size: 21px;
+    letter-spacing: 4px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.title:hover {
+    transition: .5s ease;
+    transform: scale(1.1);
+    color: #87C0CD;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.about {
+    color: #F3F9FB;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.doc-name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.doc-bio p {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #F3F9FB;
+    font-size: 25px;
+    width: 75%;
+    line-height: 1.6;
+}
+
+.hr,
+.hr2 {
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #F3F9FB, transparent);
+    margin: 20px auto 0;
+    width: 50%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.doc-card {
+    background-color: #F3F9FB;
+    width: 21.25em;
+    margin: 30px 25px 20px;
+    margin-right: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(1 1 1 / 50%);
+}
+
+.doc-card:hover {
+    transform: scale(1.05);
+    transition: .5s ease;
+}
+
+.doc-card:hover .doc-card-icon,
+.doc-card:hover .doc-card-info h3 {
+    transition: .5s ease;
+    color: #113F67;
+}
+
+.doc-card:hover .book-btn {
+    background-color: #113F67;
+    transition: .5s ease;
+}
+
+.doc-card-icon {
+    color: #226597;
+    font-size: 7em;
+    padding-top: 20px;
+}
+
+.doc-card-info h3 {
+    color: #226597;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.doc-card-info p {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 5px 5px 20px;
+}
+
+.doc-card-info .clinic-name {
+    color: #226597;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.book-btn {
+    text-decoration: none;
+    background-color: #226597;
+    color: #F3F9FB;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: -5px;
+}
+
+.doc-card-info a:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.review-title h2 {
+    color: #F3F9FB;
+    font-size: 30px;
+    margin: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.review-box {
+    display: inline-block;
+    justify-content: center;
+    background-color: #F3F9FB;
+    width: 70em;
+    min-height: 50em;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(1 1 1 / 50%);
+}
+
+.comment-box {
+    display: inline-block;
+    justify-content: center;
+    background-color: #F3F9FB;
+    width: 60em;
+    margin: 25px 20px 25px;
+    min-height: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(1 1 1 / 50%);
+}
+
+.comment-box:hover {
+    transform: translateY(-10px);
+    transition: .5s ease;
+}
+
+.comment-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment {
+    padding: 20px;
+}
+
+.comment h2 {
+    color: #113F67;
+    display: flex;
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.comment p {
+    display: flex;
+    justify-content: left;
+    margin: 5px 25px;
+    font-size: 20px;
+}
+
+.stars img {
+    width: 250px;
+    height: 70px;
+    margin: 15px 20px 0 0;
+}
+
+body:has(.switch input:checked) {
+    transition: .3s ease;
+    background-color: #023c5e;
+}
+
+body:has(.switch input:checked) .blue-background {
+    transition: .3s ease;
+    background-color: #315784;
+}
+
+body:has(.switch input:checked) .doc-card {
+    transition: .3s ease;
+    background-color: #023c5e;
+}
+
+body:has(.switch input:checked) .doc-card-icon,
+body:has(.switch input:checked) .doc-card-info,
+body:has(.switch input:checked) .doc-card-info h3,
+body:has(.switch input:checked) .clinic-name {
+    transition: .3s ease;
+    color: #F3F9FB;
+}
+
+body:has(.switch input:checked) .book-btn {
+    transition: .3s ease;
+    background-color: #315784;
+}
+
+body:has(.switch input:checked) .review-box {
+    transition: .3s ease;
+    background-color: #023c5e;
+}
+
+body:has(.switch input:checked) .comment {
+    color: #023c5e;
+}
+
+.form-bg {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3F9FB;
+    width: 30em;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(1, 1, 1, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    transition: .3s ease;
+}
+
+.form-bg.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.book-form input {
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #27548A;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+body:has(.switch input:checked) .book-form label {
+    color: #023c5e;
+}
+
+.book-form {
+    margin: 20px 0 0 0;
+}
+
+.book-form label {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.age-label {
+    margin-right: 95px;
+}
+
+.date-label {
+    margin-right: 20px;
+}
+
+.book-confirm-btn {
+    margin: 15px 5px 20px 0;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #113F67;
+    color: #F3F9FB;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    margin: 15px 0px 20px 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(167, 15, 15);
+    color: #F3F9FB;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    transform: scale(1.05);
+    transition: .3s ease;
+}
+
+.book-confirm-btn:hover {
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+.book-msg {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3F9FB;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(1, 1, 1, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #113F67;
+    flex-direction: column;
+}
+
+.book-msg.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.book-msg button {
+    padding: 10px;
+    margin: 10px 100px 0;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #113F67;
+    color: #F3F9FB;
+    border: none;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.book-msg button:hover {
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+
+.feedback-section {
+    margin: 40px auto;
+    padding: 30px;
+    width: 70%;
+    max-width: 700px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+}
+
+.feedback-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+    color: #000;
+}
+
+.feedback-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #5ab3e6;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.feedback-btn:hover {
+    background-color: #429dd1;
+}
+
+.feedback-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-popup-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+}
+
+#feedback-close-btn {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#feedback-close-btn:hover {
+    background: #45a049;
+}
+
+body:has(.switch input:checked) .feedback-section {
+    background: #1e1e1e;
+}
+
+body:has(.switch input:checked) .feedback-title,
+body:has(.switch input:checked) .feedback-label {
+    color: #fff;
+}
+
+body:has(.switch input:checked) .feedback-form input,
+body:has(.switch input:checked) .feedback-form textarea {
+    background: #2c2c2c;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body:has(.switch input:checked) .feedback-popup-content {
+    background: #2c2c2c;
+    color: #fff;
+}
+
+.book-form select {
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #27548A;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.email-label {
+    margin-right: 60px;
+}
+
+.visit-type-label {
+    margin-right: 120px;
+}

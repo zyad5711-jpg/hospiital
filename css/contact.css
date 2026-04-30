@@ -1,0 +1,256 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    background-color: #f3f3f3;
+    margin-top: 50px;
+}
+
+
+
+.contact-container {
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+    width: 767px;
+    color: #0080FF;
+    font-weight: 400;
+}
+
+.contact-container p {
+    color: black;
+}
+
+.contact-container img {
+    width: 40px;
+}
+
+.info-container {
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    height: 770px;
+    box-shadow: 0 4px 12px #858585;
+    border-radius: 10px;
+}
+
+.first-name,
+.second-name,
+.mail,
+.num,
+.message,
+.message-purpose {
+
+    padding: 20px;
+    color: #0080FF;
+    font-weight: 800;
+    font-size: large;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#purpose-id {
+    display: block;
+    width: 50%;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+    color: grey;
+    border-radius: 6px;
+}
+
+.contact-send-button {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: #4e9fcf;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.contact-send-button:hover {
+    background-color: #0080FF;
+}
+
+.down-part {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.down-part img {
+    width: 50px;
+}
+
+.visit-us,
+.call-us,
+.email-us {
+    width: 300px;
+    margin: auto;
+    height: 350px;
+    padding: auto;
+    color: #0080FF;
+}
+
+.visit-us p,
+.call-us p,
+.email-us p {
+    margin: 10px 10px 10px 10px;
+    color: black;
+}
+
+.info-container :placeholder-shown {
+    padding-left: 10px;
+}
+
+/* black theme */
+
+
+body:has(.switch input:checked) .body {
+    background-color: #0A2647;
+
+
+}
+
+body:has(.switch input:checked) .contact-container {
+    color: white;
+}
+
+body:has(.switch input:checked) .contact-container p {
+    color: #E0EAF0;
+}
+
+body:has(.switch input:checked) .info-container {
+    background-color: #16375c;
+    box-shadow: 0 4px 12px black;
+}
+
+body:has(.switch input:checked) .info-container input,
+body:has(.switch input:checked) .info-container textarea,
+body:has(.switch input:checked) #purpose-id {
+    background-color: #E0EAF0;
+}
+
+
+body:has(.switch input:checked) .first-name,
+body:has(.switch input:checked) .second-name,
+body:has(.switch input:checked) .mail,
+body:has(.switch input:checked) .num,
+body:has(.switch input:checked) .message,
+body:has(.switch input:checked) .message-purpose {
+    color: #E0EAF0;
+    font-weight: 500;
+
+}
+
+body:has(.switch input:checked) .contact-send-button {
+    background-color: #0D47A1;
+}
+
+body:has(.switch input:checked) .visit-us,
+body:has(.switch input:checked) .call-us,
+body:has(.switch input:checked) .email-us {
+    color: white;
+}
+
+body:has(.switch input:checked) .visit-us p,
+body:has(.switch input:checked) .call-us p,
+body:has(.switch input:checked) .email-us p {
+    color: #E0EAF0;
+}
+
+body:has(.switch input:checked) .visit-us a,
+body:has(.switch input:checked) .call-us a,
+body:has(.switch input:checked) .email-us a {
+    color: lightblue;
+}
+
+
+/* dark mode footer */
+body:has(.switch input:checked) .footer {
+    background-color: #0d2a3f;
+    color: #b0bec5;
+}
+
+
+body:has(.switch input:checked) .social-icons a:hover {
+    color: #83b9ee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer css */
+.footer {
+    height: 6%;
+    background-color: #4e9fcf;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    min-height: 30px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #2c3e50;
+}

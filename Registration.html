@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/Registration.css">
+    <link rel="icon" href="images/healU-circle.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>Registration</title>
+</head>
+<body>
+    <div class="header">
+        <div class="links">
+            <div class="left-links">
+                <a href="index.html" class="logo"><img src="images/clinic2.png"></a>
+            </div>
+            <div class="right-links">
+                <a href="contact.html" class="contact-header">Contact us</a>
+                <a href="login.html" class="log-in" >Login</a>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </span>
+                </label>
+            </div>
+        </div>    
+    </div>
+    <div class="container">
+        <form id="registrationForm">
+            <div class="Registration-form">
+                <h1>Registration form</h1>
+            </div>
+            <div class="text-input">
+                <label for="full name"><h3>Full Name</h3></label><br>
+                <input required type="text" placeholder="Full Name" id="full_name" name="full_name">
+            </div>
+            <div class="text-input">
+                <label for="email"><h3>Email Address</h3></label><br>
+                <input required type="email" placeholder="Email" id="email" name="email">
+            </div>
+            <div class="text-input">
+                <label for="dob"><h3>Date of Birth</h3></label><br>
+                <input required type="date" placeholder="Date of Birth" id="dob" name="dob">
+            </div>
+            <div class="passwords">
+                <div class="text-input password-wrapper">
+                    <label for="password"><h3>Password</h3></label><br>
+                    <div class="password-field">
+                        <input required type="password" placeholder="Password" id="password" name="password">
+                    </div>
+                </div>
+                <div class="text-input password-wrapper">
+                    <label for="conpassword"><h3>Confirm Password</h3></label><br>
+                    <div class="password-field">
+                        <input required type="password" placeholder="Confirm Password" id="conpassword" name="conpassword">
+                    </div>
+                </div>
+            </div>
+            <div class="genders">
+                <h3>Gender:</h3>
+                <div class="gender-options">
+                    <div class="gender">
+                        <input required type="radio" name="gender" id="check-male" value="male">
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input required type="radio" name="gender" id="check-female" value="female">
+                        <label for="check-female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-btn" id="submit-btn">
+                <button type="submit" onclick="whichEvent(event)">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Popup for successful registration -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Registration Successful!</h3>
+            <p>Your registration was completed successfully.</p>
+            <p>go back to the log in page</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Popup for password mismatch -->
+    <div class="popup" id="matching-passwords">
+        <div class="popup-content">
+            <h3>Registration Failed</h3>
+            <p>Passwords do not match.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <div class="popup" id="fill-elements">
+        <div class="popup-content">
+            <h3>Registration Failed</h3>
+            <p>please fill all the fields</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="js/registration.js"></script>
+</body>
+</html>

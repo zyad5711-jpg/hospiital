@@ -1,0 +1,280 @@
+*{
+    font-family: 'Roboto' , sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  transition: 200ms ease-in-out;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #226597;
+}
+.subtitle {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #4e9fcf;
+  width: 19em;
+  height: 350px;
+  border-radius: 50px;
+  margin: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.7s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.doctor-info {
+  text-align: center;
+}
+.doctor-info a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  display: inline-block;
+  margin: 10px;
+  font-weight: 700;
+  transition: 0.7s ease;
+  text-shadow: 1px 1px 5px #226597;
+}
+.doctor-info a:hover {
+  transform: scale(1.1);
+}
+.doctor-info p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.rating {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  color: #f4c150;
+  transition: 0.7s ease;
+}
+.rating:hover {
+  transform: scale(1.1);
+}
+.slogan {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+
+.doctor-image {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #123458;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #4e9fcf;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.chatbot-btn:hover {
+  background-color: #4e9fcf;
+  transform: scale(1.05);
+}
+
+.chatbot-btn i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chatbox-header {
+  background-color: #4e9fcf;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chatbox-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chatbox-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chatbox-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.chatbox-input button {
+  background: #4e9fcf;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.search {
+  --padding: 14px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+  border-radius: 28px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(78, 159, 207, 0.5);
+  margin: 30px auto;
+  transition: 0.4s ease;
+}
+
+.search-input {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  border: none;
+  outline: none;
+  margin-left: var(--padding);
+  flex: 1;
+  background: none;
+}
+
+.search-icon {
+  font-size: 24px;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+
+.search:hover {
+  box-shadow: 0 6px 18px rgba(199, 169, 255, 0.6);
+  transform: scale(1.05);
+  font-family: "Roboto", sans-serif;
+}
+body:has(.switch input:checked) .search {
+  transition: 0.3s ease;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+}
+body:has(.switch input:checked) {
+  transition: 200ms ease-in-out;
+  background-color: #0a2647;
+}
+
+body:has(.switch input:checked) .card {
+  background-color: #16375c;
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+body:has(.switch input:checked) .box a {
+  color: #e0eaf0;
+}
+
+body:has(.switch input:checked) .description,
+body:has(.switch input:checked) .main-title,
+body:has(.switch input:checked) .subtitle {
+  color: #e0eaf0;
+}
+body:has(.switch input:checked) .chatbox-body,
+body:has(.switch input:checked).chatbot-btn:hover {
+  background-color: #0a2647;
+}
+
+body:has(.switch input:checked) .chatbox-input button,
+body:has(.switch input:checked) .chatbox-input input,
+body:has(.switch input:checked) .chatbox-header,
+body:has(.switch input:checked) .chatbot-btn {
+  background-color: #16375c;
+}
+
+body:has(.switch input:checked) .chatbox-body,
+body:has(.switch input:checked) .chatbox-input ::-webkit-input-placeholder {
+  color: #e0eaf0;
+}
+body:has(.switch input:checked) .search {
+  background-color: #16375c;
+}
+body:has(.switch input:checked) .search ::-webkit-input-placeholder,
+body:has(.switch input:checked) .search-icon {
+  color: #e0eaf0;
+}
+body:has(.switch input:checked) .doctor-info a{
+  transition: .3s ease;
+  text-shadow: 1px 1px 5px#09122C;
+}
